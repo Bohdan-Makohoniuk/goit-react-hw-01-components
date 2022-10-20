@@ -5,6 +5,7 @@ import data from './data/data.json'
 
 export function App () {
   return (
+    <div>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -13,8 +14,17 @@ export function App () {
       stats={user.stats}
       followers={user.stats.followers}
       views={user.stats.followers}
-      likes={user.stats.likes} />
-  //   <Statistics title="Upload stats" stats={data} />,
-  // <Statistics stats={data} />
-  );
-};
+        likes={user.stats.likes} />
+      
+      <Statistics title="Upload stats" stats={data} />
+      {/* <Statistics stats={data} /> */}
+      </div>
+      ); 
+}
+
+
+
+ 
+      
+
+

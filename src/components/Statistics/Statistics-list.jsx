@@ -1,14 +1,16 @@
-// import PropTypes from 'prop-types';
-// const StaticticList = ({ label, percentage })=> {
-//    return (
-//       <li>
-        
-//       </li>
-//    );
-// }
+import PropTypes from 'prop-types';
 
-// StaticticList.propTypes = {
-//    label: PropTypes.string.isRequired,
-//    percentage: PropTypes.number.isRequired,
-// };
-// export default StaticticList
+const StatisticsList = ({ label, percentage }) => {
+    return (
+        <li class="item">
+      <span class="label">{label}</span>
+      <span class="percentage">{percentage}%</span>
+    </li>
+    )
+}
+
+StatisticsList.propTypes = {
+   label: PropTypes.string.isRequired,
+   percentage: PropTypes.number.isRequired,
+};
+export default StatisticsList;
