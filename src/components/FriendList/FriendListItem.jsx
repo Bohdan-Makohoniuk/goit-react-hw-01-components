@@ -1,6 +1,6 @@
 
 import PropTypes from 'prop-types';
-import {List, FrName, Status, StatusRed, StatusGreen} from './FrendList.styled'
+import {List, FrName, Status} from './FrendList.styled'
 const FriendListItem = ({ avatar, name, isOnline }) => {
     return (
         <List>
@@ -18,5 +18,5 @@ FriendListItem.propTypes = {
 export default (FriendListItem);
 
 
-
+// , StatusRed, StatusGreen
 // { isOnline } ? <StatusRed /> : <StatusGreen />
