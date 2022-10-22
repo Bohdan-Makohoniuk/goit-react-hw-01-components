@@ -6,10 +6,13 @@ import user from './data/user.json'
 import data from './data/data.json'
 import friends from './data/friends.json'
 import transactions from './data/transactions.json'
+import { Container } from './App.styled'
 
-export function App () {
+
+
+export function App() {
   return (
-    <div>
+    <Container>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -26,7 +29,7 @@ export function App () {
       <FriendList friends={friends} />
 
       <TransactionHistory items={transactions} />;
-      </div>
+      </Container>
       ); 
 }
 

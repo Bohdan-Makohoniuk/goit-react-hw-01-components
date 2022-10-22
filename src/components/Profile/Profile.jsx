@@ -1,16 +1,22 @@
 import PropTypes from 'prop-types'; 
-const Profile = ({username, tag, location, avatar, followers, views, likes}) => {
+import {Card} from './Profile.styled'
+
+const Profile = ({ username, tag, location, avatar, followers, views, likes }) => {
   return (<div classname="profile">
-  <div classname="description">
-    <img
+    
+    <Card classname="description">
+      <div>
+      <img
       src={avatar}
       alt={username}
-      classname="avatar"
-    />
+      width="136px"
+        
+        />
+        </div>
     <p classname="name">{username}</p>
     <p classname="tag">{tag}</p>
     <p classname="location">{location}</p>
-  </div>
+  </Card>
 
   <ul classname="stats">
     <li>
@@ -28,6 +34,8 @@ const Profile = ({username, tag, location, avatar, followers, views, likes}) => 
   </ul>
     </div>)
 }
+
+
 Profile.propTypes = {
   username:PropTypes.string,
   tag :PropTypes.string,
