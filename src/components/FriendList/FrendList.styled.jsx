@@ -35,12 +35,12 @@ export const Status =styled.span`
 	margin-right: 10px; 
     
 ` 
- export const StatusRed = styled.span`
-    background: #ff0000; 
-`
+//  export const StatusRed = styled.span`
+//     background: #ff0000; 
+// `
 	
 
-export const StatusGreen = styled.span`
-	background: green;    
-`
+// export const StatusGreen = styled.span`
+// 	background: green;    
+// `
 
