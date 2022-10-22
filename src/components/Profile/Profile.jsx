@@ -15,15 +15,15 @@ const Profile = ({ username, tag, location, avatar, followers, views, likes }) =
   <StatusList>
     <List>
       <LabelName>Followers</LabelName>
-      <span classname="quantity">{followers}</span>
+      <span>{followers}</span>
     </List>
     <List>
       <LabelName>Views</LabelName>
-    <span classname="quantity">{views}</span>
+    <span>{views}</span>
     </List>
     <List>
       <LabelName>Likes</LabelName>
-      <span classname="quantity">{likes}</span>
+      <span>{likes}</span>
     </List>
       </StatusList>
     </Card>

@@ -3,10 +3,10 @@ import StatisticsList from './Statistics-list'
 import{Section, Title, StatList} from './Statistics.styled'
 const Statistics = ({ title, stats }) => {
     return (
-        <Section class="statistics">
-            <Title class="title">{title}</Title>
+        <Section>
+            <Title>{title}</Title>
 
-            <StatList class="stat-list">
+            <StatList>
                 {stats.map(({ id, label, percentage }) => {
                     return (
                         <StatisticsList

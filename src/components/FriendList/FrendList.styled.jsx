@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 
-export const FrList =styled.ul`
+export const FrList = styled.ul`
     display: flex;
 	flex-direction: column;
 	width: 270px;

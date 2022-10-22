@@ -4,7 +4,7 @@ import FriendListItem from './FriendListItem'
 import {FrList} from './FrendList.styled'
 const FriendList = ({ friends }) => {
     return (
-        <FrList class="friend-list">
+        <FrList>
             {friends.map(({ id, avatar, name, isOnline,}) => {
                 return (
                     <FriendListItem 

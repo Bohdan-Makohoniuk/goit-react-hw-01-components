@@ -4,7 +4,7 @@ import {Tab, TableRow, TableData, TableHeader} from './TransactionHistory.stelyd
 
 const TransactionHistory = ({ items }) => {
   return (
-    <Tab class="transaction-history">
+    <Tab>
       <thead>
             <TableRow>
                <TableHeader>Type</TableHeader>
