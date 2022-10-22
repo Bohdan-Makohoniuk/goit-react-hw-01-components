@@ -1,41 +1,35 @@
 import PropTypes from 'prop-types'; 
-import {Card} from './Profile.styled'
-
+// styled
+import {Card, Avatar, UserName, UserTeg, UserLocation, StatusList, List, LabelName } from './Profile.styled'
+// =================================================================================
 const Profile = ({ username, tag, location, avatar, followers, views, likes }) => {
-  return (<div classname="profile">
-    
-    <Card classname="description">
-      <div>
-      <img
+  return <Card>
+      <Avatar
       src={avatar}
       alt={username}
-      width="136px"
-        
-        />
-        </div>
-    <p classname="name">{username}</p>
-    <p classname="tag">{tag}</p>
-    <p classname="location">{location}</p>
-  </Card>
+        />  
+    <UserName>{username}</UserName>
+    <UserTeg>{tag}</UserTeg>
+    <UserLocation>{location}</UserLocation>
 
-  <ul classname="stats">
-    <li>
-      <span classname="label">Followers</span>
+  <StatusList>
+    <List>
+      <LabelName>Followers</LabelName>
       <span classname="quantity">{followers}</span>
-    </li>
-    <li>
-      <span classname="label">Views</span>
+    </List>
+    <List>
+      <LabelName>Views</LabelName>
     <span classname="quantity">{views}</span>
-    </li>
-    <li>
-      <span classname="label">Likes</span>
+    </List>
+    <List>
+      <LabelName>Likes</LabelName>
       <span classname="quantity">{likes}</span>
-    </li>
-  </ul>
-    </div>)
+    </List>
+      </StatusList>
+    </Card>
 }
 
-
+// Що очікує отримати props
 Profile.propTypes = {
   username:PropTypes.string,
   tag :PropTypes.string,
@@ -43,5 +37,4 @@ Profile.propTypes = {
   avatar: PropTypes.string,
   
 }
-
 export default Profile;

@@ -32,10 +32,3 @@ export function App() {
       </Container>
       ); 
 }
-
-
-
- 
-      
-
-
