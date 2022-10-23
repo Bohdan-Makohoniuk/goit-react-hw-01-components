@@ -4,8 +4,9 @@ import{Section, Title, StatList} from './Statistics.styled'
 const Statistics = ({ title, stats }) => {
     return (
         <Section>
-            <Title>{title}</Title>
-
+            {/* Рендер за умовою якщо props title є рендерем якщо немає то не рендерем */}
+            {title && <Title>{title}</Title>}
+            
             <StatList>
                 {stats.map(({ id, label, percentage }) => {
                     return (

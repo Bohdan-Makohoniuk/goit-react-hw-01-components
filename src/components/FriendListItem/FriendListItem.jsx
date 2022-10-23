@@ -1,10 +1,10 @@
 
 import PropTypes from 'prop-types';
-import {List, FrName, Status} from './FrendList.styled'
+import {List, FrName, StatusGreen, StatusRed} from '../FriendListItem/FriendListItem.styled'
 const FriendListItem = ({ avatar, name, isOnline }) => {
     return (
         <List>
-            <Status></Status>
+            {isOnline ? <StatusGreen>{isOnline}</StatusGreen>:<StatusRed>{isOnline}</StatusRed>}
             <img src={avatar} alt={name} width="48" />
             <FrName>{name}</FrName>
         </List>
@@ -13,10 +13,8 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
 FriendListItem.propTypes = {
     avatar: PropTypes.string,
     name: PropTypes.string,
-    // isOnline:
+    isOnline: PropTypes.bool.isRequired,
 }
 export default (FriendListItem);
 
 
-// , StatusRed, StatusGreen
-// { isOnline } ? <StatusRed /> : <StatusGreen />
